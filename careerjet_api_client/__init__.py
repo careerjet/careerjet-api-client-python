@@ -57,9 +57,6 @@ class CareerjetAPIClient(object):
 	     	location     	: Location of requested job postings.
 	                      		Examples: 'London' , 'Yorkshire', 'France' 
 	                      		Default: country specified by country code
-
-	     	location_id  	: Location ID. Use values comming from the search function when location is ambiguous.
-	                      		Default: none
 	 
 	     	sort         	: Type of sort. This can be:
 		                       'relevance'  - sorted by decreasing relevancy (default)
