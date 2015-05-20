@@ -1,5 +1,5 @@
 # Careerjet API Client Python
-Official Python interface to [Careerjet](http://www.careerjet.com)'s  public search API
+Official Python interface to [Careerjet](http://www.careerjet.co.uk)'s  public search API
 
 ## Installation
 
