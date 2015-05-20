@@ -7,7 +7,7 @@ from careerjet_api_client.constants import Constants
 #Note: urlparse is renamed to urllib.parse in Python 3
 from urlparse import urlparse
 
-class APIClient(object):
+class CareerjetAPIClient(object):
 
 	def __init__(self, locale_code="en_GB"):
 		"""
