@@ -111,7 +111,7 @@ class CareerjetAPIClient(object):
 
 		try:
 			response  = requests.get(Constants.API_URL + '/search', headers={ 'user-agent':user_agent ,'referer' : referer_uri.geturl() } ,params=search_params)
-		except Exception, e:
+		except Exception as e:
 			raise e
 
 		#If we made a bad request (a 4XX client error or 5XX server error response), we can raise it with 
