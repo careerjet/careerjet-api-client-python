@@ -5,7 +5,7 @@ import requests
 import json
 from careerjet_api_client.constants import Constants
 #Note: urlparse is renamed to urllib.parse in Python 3
-from urlparse import urlparse
+from urllib.parse import urlparse
 
 class CareerjetAPIClient(object):
 
@@ -111,7 +111,7 @@ class CareerjetAPIClient(object):
 
 		try:
 			response  = requests.get(Constants.API_URL + '/search', headers={ 'user-agent':user_agent ,'referer' : referer_uri.geturl() } ,params=search_params)
-		except Exception, e:
+		except Exception as e:
 			raise e
 
 		#If we made a bad request (a 4XX client error or 5XX server error response), we can raise it with 
@@ -119,5 +119,5 @@ class CareerjetAPIClient(object):
 
 		try:
 			return json.loads(response.text)
-		except Exception, e:
+		except Exception as e:
 			raise e
